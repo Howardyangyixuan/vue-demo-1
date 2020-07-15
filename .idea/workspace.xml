@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a1814227-7cc3-4efe-a0ca-a4a76fb1fd05" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Component1.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component2.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Component4.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Props.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="ProjectId" id="1ehh8JTbHL9VZlPEKRedZ3Z0G1E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1814227-7cc3-4efe-a0ca-a4a76fb1fd05" name="Default Changelist" comment="" />
+      <created>1594779571198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594779571198</updated>
+      <workItem from="1594779575126" duration="241000" />
+      <workItem from="1594779826782" duration="2728000" />
+      <workItem from="1594804724029" duration="880000" />
+      <workItem from="1594805986019" duration="10142000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594811110490">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="0" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1594811110490" />
+    <state x="12" y="226" key="SettingsEditor" timestamp="1594805972446">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="12" y="226" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1594805972446" />
+    <state x="541" y="291" width="598" height="490" key="find.popup" timestamp="1594805061147">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="541" y="291" width="598" height="490" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1594805061147" />
+    <state x="155" y="400" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1594779766574">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="155" y="400" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.23.1680.1027@0.23.1680.1027" timestamp="1594779766574" />
+  </component>
+</project>
