@@ -1,5 +1,6 @@
 import Demo from "./components/Demo"
 
+const Vue = window.Vue
 Vue.config.productionTip = false
 
 // }).$mount('#app')
