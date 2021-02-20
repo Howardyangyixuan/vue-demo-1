@@ -9,7 +9,7 @@ const vm = new Vue({
   },
   template: `
     <div>
-      <Demo msg="hi" :value="n" v-if="visible === true"/>
+      <Demo msg="hi" :value="n" :fn="add" v-if="visible === true"/>
       <button @click="toggle">hide</button>
       <button @click="add">props +1</button>
       <hr>
