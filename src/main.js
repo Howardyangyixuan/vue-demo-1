@@ -1,24 +1,16 @@
 // import Vue from 'vue'
 import App from "./App.vue"
+import Demo from "./components/Demo"
 
 Vue.config.productionTip = false
 
 // new Vue({
 //   render: h => h(App),
 // }).$mount('#app')
-console.log(Vue)
+console.log(Demo.render.toString())
 new Vue({
   el: "#app",
-  template: "<div>{{n}}<button @click='add'>+1</button></div>",
-  data() {
-    return {
-      n: 0
-    }
-  },
-  methods: {
-    add() {
-      console.log("hi")
-      this.n += 1
-    }
+  render(h) {
+    return h(Demo)
   }
 })
