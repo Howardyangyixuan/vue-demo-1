@@ -9,16 +9,23 @@ const vm = new Vue({
   },
   template: `
     <div>
-      <Demo v-if="visible === true"/>
+      <Demo msg="hi" :value="n" v-if="visible === true"/>
       <button @click="toggle">hide</button>
+      <button @click="add">props +1</button>
+      <hr>
+      main data:{{n}}
     </div>
   `,
   data: {
+    n: 0,
     visible: true
   },
   methods: {
     toggle() {
       this.visible = !this.visible
+    },
+    add() {
+      this.n += 1
     }
   }
 })

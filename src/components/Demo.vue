@@ -1,12 +1,17 @@
 <template>
   <div class="red">
     {{n}}
-    <button @click="add">+1</button>
+    <button @click="add">demo data +1</button>
+    <hr>
+    props msg:{{msg}}
+    <hr>
+    {{value}}
   </div>
 </template>
 
 <script>
   export default {
+    props: ["msg", "value"],
     data() {
       return {
         n: 0
