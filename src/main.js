@@ -9,9 +9,7 @@ Vue.config.productionTip = false
 console.log(Vue)
 new Vue({
   el: "#app",
-  render(h) {
-    return h("div", [this.n, h("button", {on: {click: this.add}}, "+1")])
-  },
+  template: "<div>{{n}}<button @click='add'>+1</button></div>",
   data() {
     return {
       n: 0
