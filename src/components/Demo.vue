@@ -16,6 +16,20 @@
       add() {
         this.n += 1
       }
+    },
+    created() {
+      console.log("create")
+    },
+    mounted() {
+      console.log("mounted")
+    },
+    updated() {
+      console.log("updated")
+      console.log("visible", this.visible)
+    },
+    destroyed() {
+      console.log("destroyed")
+      debugger
     }
   }
 </script>
