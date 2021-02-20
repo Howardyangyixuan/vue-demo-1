@@ -18,10 +18,20 @@ const vm = new Vue({
   //   return h(Demo)
   // }
   components: {
-    Demo
+    Demo,
+    Test: {
+      data() {
+        return {n: 0}
+      },
+      template: `
+        <div>Test:{{n}}</div>
+      `
+    }
   },
   template: `
     <div>
+      <Test/>
+      <hr>
       <vueComponent/>
       <hr>
       <Demo/>
