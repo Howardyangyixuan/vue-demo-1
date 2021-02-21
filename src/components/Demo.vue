@@ -33,7 +33,6 @@
     },
     updated() {
       console.log("updated")
-      console.log("visible", this.visible)
     },
     destroyed() {
       console.log("destroyed")
