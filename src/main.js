@@ -1,5 +1,6 @@
 import Demo from "./components/Demo"
-import "./dataLearning"
+// import "./dataLearning"
+import "./dataTest"
 
 const Vue = window.Vue
 Vue.config.productionTip = false
@@ -36,4 +37,5 @@ vm.$mount("#app")
 
 setTimeout(() => {
   myData.n += 10
+  console.log(myData)
 }, 3000)
