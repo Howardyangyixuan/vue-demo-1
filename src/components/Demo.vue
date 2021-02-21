@@ -25,19 +25,18 @@
         this.n += 1
       }
     },
-    created() {
-      console.log("create")
-    },
-    mounted() {
-      console.log("mounted")
-    },
-    updated() {
-      console.log("updated")
-    },
-    destroyed() {
-      console.log("destroyed")
-      debugger
-    }
+    // created() {
+    //   console.log("create")
+    // },
+    // mounted() {
+    //   console.log("mounted")
+    // },
+    // updated() {
+    //   console.log("updated")
+    // },
+    // destroyed() {
+    //   console.log("destroyed")
+    // }
   }
 </script>
 

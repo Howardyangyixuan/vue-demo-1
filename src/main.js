@@ -1,4 +1,5 @@
 import Demo from "./components/Demo"
+import "./dataLearning"
 
 const Vue = window.Vue
 Vue.config.productionTip = false
@@ -8,17 +9,6 @@ let myData = {
   visible: true
 }
 
-function print(obj) {
-  let result = ""
-  for (let i in obj) {
-    result += i + "=" + obj[i] + "\n"
-  }
-  return result
-}
-
-console.log(print(myData))
-console.log(JSON.stringify(myData))
-console.log(myData)
 const vm = new Vue({
   components: {
     Demo
@@ -46,7 +36,4 @@ vm.$mount("#app")
 
 setTimeout(() => {
   myData.n += 10
-  console.log(print(myData))
-  console.log(JSON.stringify(myData))
-  console.log(myData)
 }, 3000)
