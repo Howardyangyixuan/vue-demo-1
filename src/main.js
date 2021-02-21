@@ -3,6 +3,10 @@ import Demo from "./components/Demo"
 const Vue = window.Vue
 Vue.config.productionTip = false
 
+let myData = {
+  n: 0,
+  visible: true
+}
 const vm = new Vue({
   components: {
     Demo
@@ -16,10 +20,7 @@ const vm = new Vue({
       main data:{{n}}
     </div>
   `,
-  data: {
-    n: 0,
-    visible: true
-  },
+  data: myData,
   methods: {
     toggle() {
       this.visible = !this.visible
@@ -30,3 +31,7 @@ const vm = new Vue({
   }
 })
 vm.$mount("#app")
+
+setTimeout(() => {
+  myData.n += 10
+}, 3000)
