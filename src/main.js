@@ -1,35 +1,38 @@
-import Demo from "./components/Demo"
+// import Demo from "./components/Demo"
 // import "./dataLearning"
-import "./dataTest"
+// import "./dataTest"
 
 const Vue = window.Vue
 Vue.config.productionTip = false
 
 let myData = {
+  undeclared: {
+    a: 0
+  },
   n: 0,
   visible: true
 }
 
 const vm = new Vue({
-  components: {
-    Demo
-  },
   template: `
     <div>
-      <Demo msg="hi" :value="n" :fn="add" v-if="visible === true"/>
-      <button @click="toggle">hide</button>
-      <button @click="add">props +1</button>
+      <button @click="set">set undeclared b</button>
+      <button @click="add">b+1</button>
       <hr>
       main data:{{n}}
+      undeclared data:{{undeclared.b}}
     </div>
   `,
   data: myData,
   methods: {
-    toggle() {
-      this.visible = !this.visible
+    set() {
+      //但是需要保证set是在其他赋值之前，否则会提前生成，如果已有数据则不会添加代理和监听
+      Vue.set(this.undeclared, "b", 1)
+      // this.$set(this.undeclared, "b", 1)
     },
     add() {
-      this.n += 1
+      this.undeclared.b += 1
+      console.log(myData)
     }
   }
 })
