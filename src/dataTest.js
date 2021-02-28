@@ -70,6 +70,7 @@ function proxy2({data}) {
       return value
     },
     set(v) {
+      //这里是对原始数据的改变进行监听
       if (v <= 0) return
       value = v
     },
@@ -80,6 +81,7 @@ function proxy2({data}) {
       return data.n
     },
     set(v) {
+      //这里是对数据常规的改变进行代理
       if (v <= 0) return
       value = v
     },
