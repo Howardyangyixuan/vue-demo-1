@@ -9,6 +9,7 @@ let myData = {
   undeclared: {
     a: 0
   },
+  array: ["a", "b", "c"],
   n: 0,
   visible: true
 }
@@ -18,9 +19,13 @@ const vm = new Vue({
     <div>
       <button @click="set">set undeclared b</button>
       <button @click="add">b+1</button>
+      <button @click="setPush">use set to push d to array</button>
+      <button @click="push">push e to array</button>
+      <button @click="change">add array 3</button>
       <hr>
       main data:{{n}}
       undeclared data:{{undeclared.b}}
+      array:{{array}}
     </div>
   `,
   data: myData,
@@ -33,12 +38,22 @@ const vm = new Vue({
     add() {
       this.undeclared.b += 1
       console.log(myData)
+    },
+    push() {
+      this.array.push("e")
+    },
+    setPush() {
+      Vue.set(this.array, "4", "d")
+    },
+    change() {
+      this.array[3] = 1
     }
   }
 })
 vm.$mount("#app")
 
 setTimeout(() => {
+  //直接修改数据，即被监听对象，会触发全局更新
   myData.n += 10
   console.log(myData)
 }, 3000)
