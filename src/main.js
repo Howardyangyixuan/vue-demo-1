@@ -43,7 +43,7 @@ const vm = new Vue({
       this.array.push("e")
     },
     setPush() {
-      Vue.set(this.array, "4", "d")
+      Vue.set(this.array, "3", "d")
     },
     change() {
       this.array[3] = 1
