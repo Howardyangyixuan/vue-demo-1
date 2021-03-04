@@ -3,17 +3,16 @@
     Inside Demo
     {{n}}
     <button @click="add">demo data +1</button>
-    <button @click="fn">props data +1</button>
-    <hr>
-    props msg:{{msg}}
-    <hr>
-    {{value}}
   </div>
 </template>
 
 <script>
   export default {
-    props: ["msg", "value", "fn"],
+    template: `
+      <div>
+        {{n}}
+      </div>
+    `,
     data() {
       return {
         n: 0
@@ -21,7 +20,6 @@
     },
     methods: {
       add() {
-        this.value += 1
         this.n += 1
       }
     },

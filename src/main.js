@@ -1,4 +1,4 @@
-// import Demo from "./components/Demo"
+import Demo from "./components/Demo"
 // import "./dataLearning"
 // import "./dataTest"
 
@@ -12,6 +12,7 @@ let myData = {
 const vm = new Vue({
   template: `
     <div>
+      <Demo/>
       <button @click="set">set</button>
       word:{{word}}
       <hr>
@@ -20,6 +21,9 @@ const vm = new Vue({
       lowercase word:{{getLower}}
     </div>
   `,
+  components: {
+    Demo
+  },
   data: myData,
   computed: {
     //computed这里必须有this
