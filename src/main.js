@@ -6,6 +6,7 @@ const Vue = window.Vue
 Vue.config.productionTip = false
 
 let myData = {
+  syncSingle: "A",
   single: "A",
   multiple: [],
   line: "",
@@ -26,6 +27,12 @@ let myData = {
 const vm = new Vue({
   template: `
     <div>
+      使用sync单选框:{{syncSingle}}，初次渲染没有选中，说明是单向绑定
+      <label>
+        <input type="radio" name="a" :value="syncSingle" @click="syncSingle='A'">
+        <input type="radio" name="a" :value="syncSingle" @click="syncSingle='B'">
+      </label>
+      <hr>
       单选框:{{single}}
       <label>
         <input type="radio" v-model=single value="A">

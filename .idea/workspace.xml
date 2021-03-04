@@ -70,7 +70,7 @@
       <workItem from="1614513782269" duration="5593000" />
       <workItem from="1614559630695" duration="1712000" />
       <workItem from="1614605702371" duration="384000" />
-      <workItem from="1614641334613" duration="7049000" />
+      <workItem from="1614641334613" duration="8251000" />
     </task>
     <servers />
   </component>
@@ -110,5 +110,17 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="155" y="400" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.23.1680.1027@0.23.1680.1027" timestamp="1594779766574" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
