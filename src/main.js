@@ -16,7 +16,11 @@ let myData = {
     {id: 1, value: "to be"},
     {id: 2, value: "not to be"},
     {id: 3, value: "no answer"}
-  ]
+  ],
+  user: {
+    name: "",
+    password: ""
+  }
 }
 
 const vm = new Vue({
@@ -57,12 +61,28 @@ const vm = new Vue({
       <select multiple v-model="multiSelect">
         <option v-for="item in database" :key="item.id">{{item.value}}</option>
       </select>
+      <hr>
+      form表单，登陆框
+      <div>
+        <form @submit.prevent="onSubmit">
+          <label>
+            用户名
+            <input type="text" v-model="user.name">
+          </label>
+          <label>
+            密码
+            <input type="password" v-model="user.password">
+          </label>
+          <button type="submit">登录</button>
+        </form>
+      </div>
+      <hr>
     </div>
   `,
   data: myData,
   methods: {
-    set() {
-      this.logo = "*"
+    onSubmit() {
+      console.log(this.user)
     },
   }
 })
