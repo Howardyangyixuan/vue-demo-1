@@ -9,7 +9,7 @@ let myData = {
   syncSingle: "A",
   single: "A",
   multiple: [],
-  line: "",
+  line: 0,
   multiLine: [],
   select: "",
   multiSelect: [],
@@ -52,7 +52,7 @@ const vm = new Vue({
       <hr>
       单行输入:{{line}}
       <label>
-        <input type="text" v-model=line placeholder="fill in line">
+        <input type="text" v-model.lazy.number.trim=line placeholder="fill in line">
       </label>
       <hr>
       多行输入:{{multiLine}}
@@ -71,7 +71,7 @@ const vm = new Vue({
       <hr>
       form表单，登陆框
       <div>
-        <form @submit.prevent="onSubmit">
+        <form @submit="onSubmit">
           <label>
             用户名
             <input type="text" v-model="user.name">
